@@ -29,6 +29,16 @@ Figma "AI system test" 파일의 Variables(공개 오픈소스 디자인 시스�
 ## 빌드
 
 ```bash
-npm run tokens:wds      # 한 번 빌드
-npm run storybook       # 시작 시 빌드, tokens.json 저장 시 자동 재빌드
+npm run tokens:wds        # 한 번 빌드
+npm run storybook         # 시작 시 빌드, tokens.json 저장 시 자동 재빌드
+npm run storybook:sync    # 위 + GitHub 원격 브랜치를 5초마다 확인해 토큰 변경을 자동으로 받아옴
 ```
+
+## Figma → 스토리북 동기화 시연
+
+1. `npm run storybook:sync` 실행 → 스토리북 **WDS / Button / Token sync (Figma → Git)** 열기
+2. Figma에서 변수 변경(예: `Global` → `color/blue/50`)
+3. Tokens Studio → Styles & Variables → Import variables(**Styles 체크 해제**) → Push
+4. 몇 초 안에 버튼 색과 값이 바뀌고 "마지막 변경" 시각이 찍힘 → 토큰 반영 시간 측정에 사용
+
+로컬에 커밋하지 않은 변경이 있으면 받아오지 않고 경고만 남깁니다(작업을 덮어쓰지 않음).
