@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import { ComponentLibrary } from './pages/ComponentLibrary';
 import { ProjectOverview } from './pages/ProjectOverview';
+import { Projects } from './pages/Projects';
 
-// Two Figma frames, two views:  /#/  → Workspace · Project overview,  /#/components → MUI · Components
+// /#/ → Workspace · Project overview,  /#/projects → Workspace · Projects,  /#/components → MUI · Components
 function useHash() {
   const [hash, setHash] = useState(window.location.hash);
   useEffect(() => {
@@ -15,5 +16,7 @@ function useHash() {
 
 export default function App() {
   const hash = useHash();
-  return hash === '#/components' ? <ComponentLibrary /> : <ProjectOverview />;
+  if (hash === '#/components') return <ComponentLibrary />;
+  if (hash === '#/projects') return <Projects />;
+  return <ProjectOverview />;
 }
