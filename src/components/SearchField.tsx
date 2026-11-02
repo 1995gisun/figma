@@ -1,16 +1,17 @@
 import InputAdornment from '@mui/material/InputAdornment';
 import TextField from '@mui/material/TextField';
+import { cssVar } from '../theme/tokens';
 import { Icon } from './Icon';
 
 type Props = {
   value?: string;
   onChange?: (value: string) => void;
   placeholder?: string;
-  width?: number;
+  width?: number | string;
 };
 
-// DS/TextField — 240 × 40 px · leading icon · placeholder
-export function SearchField({ value, onChange, placeholder = 'Search projects', width = 240 }: Props) {
+// DS/TextField — input/default tokens (240 × 40 px in Light) · leading icon · placeholder
+export function SearchField({ value, onChange, placeholder = 'Search projects', width = cssVar('input.default.size.input-width') }: Props) {
   return (
     <TextField
       value={value}

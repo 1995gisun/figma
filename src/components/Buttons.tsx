@@ -20,5 +20,3 @@ export function ButtonOutlined({ label, ...rest }: DsButtonProps) {
     </Button>
   );
 }
-
-//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
