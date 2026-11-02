@@ -1,0 +1,65 @@
+/* WDS Button — Figma "Components / Button" 과 같은 속성(variant · size · state).
+   색·간격·크기·모서리·글자는 전부 design-system/tokens.json 에서 만든 --wds-* 변수만 씁니다. */
+.wds-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--wds-button-gap);
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-radius: var(--wds-button-radius);
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.wds-button--large {
+  height: var(--wds-button-height-large);
+  padding: 0 var(--wds-button-padding-x-large);
+  font-size: var(--wds-font-size-body-1);
+  line-height: var(--wds-line-height-body-1);
+  font-weight: var(--wds-font-weight-medium);
+}
+
+.wds-button--medium {
+  height: var(--wds-button-height-medium);
+  padding: 0 var(--wds-button-padding-x-medium);
+  font-size: var(--wds-font-size-label-1);
+  line-height: var(--wds-line-height-label-1);
+  font-weight: var(--wds-font-weight-semibold);
+}
+
+.wds-button--block { display: flex; width: 100%; }
+
+.wds-button--primary { background: var(--wds-button-primary-bg); color: var(--wds-button-primary-label); }
+.wds-button--primary:active,
+.wds-button--primary[data-state='pressed'] { background: var(--wds-button-primary-bg-pressed); }
+
+.wds-button--secondary { background: var(--wds-button-secondary-bg); color: var(--wds-button-secondary-label); }
+.wds-button--secondary:active,
+.wds-button--secondary[data-state='pressed'] { background: var(--wds-button-secondary-bg-pressed); }
+
+.wds-button--outline {
+  background: var(--wds-button-outline-bg);
+  border-color: var(--wds-button-outline-border);
+  color: var(--wds-button-outline-label);
+}
+.wds-button--outline:active,
+.wds-button--outline[data-state='pressed'] { background: var(--wds-button-outline-bg-pressed); }
+
+.wds-button:disabled { cursor: not-allowed; }
+.wds-button--primary:disabled,
+.wds-button--secondary:disabled { background: var(--wds-button-disabled-bg); color: var(--wds-button-disabled-label); }
+.wds-button--outline:disabled { border-color: var(--wds-button-disabled-border); color: var(--wds-button-disabled-label); }
+
+.wds-button__spinner {
+  width: 1em;
+  height: 1em;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: wds-spin 0.8s linear infinite;
+}
+
+@keyframes wds-spin { to { transform: rotate(360deg); } }
