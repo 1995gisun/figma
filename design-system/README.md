@@ -12,9 +12,9 @@ Figma "AI system test" 파일의 Variables(공개 오픈소스 디자인 시스�
 
 | 세트 | 토큰 수 | 내용 |
 |---|---|---|
-| `Global/Value` | 122 | 기초 값(색상·간격·모서리·글자 크기·줄 높이·굵기·크기). CSS로 출력하지 않음 |
-| `Semantic/Light` · `Semantic/Dark` · `Semantic/Senior` | 각 81 | 의미 토큰. 전부 Global 참조 |
-| `Component/Value` | 77 | button, input, list-item, tab, bottom-sheet. 전부 Semantic 참조 |
+| `Global/Value` | 136 | 기초 값(색상·간격·모서리·글자 크기·줄 높이·굵기·크기). CSS로 출력하지 않음 |
+| `Semantic/Light` · `Semantic/Dark` · `Semantic/Senior` | 각 97 | 의미 토큰. 전부 Global 참조 |
+| `Component/Value` | 135 | button, input, list-item, tab, bottom-sheet + icon, top-app-bar, feed-item, banner, shortcut-tile, illustration, tab-bar. 전부 Semantic 참조 |
 
 모드별 CSS = `Global/Value` + `Semantic/{모드}` + `Component/Value`.
 

@@ -48,7 +48,7 @@ Figma Variables, `design-system/tokens.json`, CSS 변수가 **같은 이름**을
 {컴포넌트}/{속성}[-크기]                예) button/height-large, input/padding-x
 ```
 
-컴포넌트 이름은 `button`, `input`, `list-item`, `tab`, `bottom-sheet` 5개입니다.
+컴포넌트 이름은 PoC 기본 5종 `button`, `input`, `list-item`, `tab`, `bottom-sheet`와, 마이 > 홈 화면 재현에 추가한 `icon`, `top-app-bar`, `feed-item`, `banner`, `shortcut-tile`, `illustration`, `tab-bar` 입니다.
 
 ## 3. 모드 규칙
 
@@ -75,6 +75,12 @@ Figma 컴포넌트 속성 이름과 값은 코드 컴포넌트 prop과 같게 �
 | `ListItem` | `trailing=chevron·value·none`, `state=default·pressed·disabled`, `title`, `description`, `showLeading`, `showDescription` | `<WdsListItem title description trailing="value">` |
 | `TabItem` / `Tabs` | `variant=line·segment`, `state=default·pressed·selected·disabled`, `label` | `<WdsTabs v-model variant="segment"><WdsTab value>` |
 | `BottomSheet` | `actions=single·double`, `title`, `description` | `<WdsBottomSheet v-model:open title>` + `#default`, `#actions` 슬롯 |
+| `Icon` | `name=scan·siren·bot·menu-search·eye·chevron-right·gift·won·person·card·plane` | `<WdsIcon name="eye">` |
+| `TopAppBar` | `leftLabel`, `rightLabel` | `<WdsTopAppBar v-model:mode>` |
+| `FeedItem` | `meta`, `title`, `amount` | `<WdsFeedItem meta title amount>` |
+| `Banner` | `label`, `highlight` | `<WdsBanner label highlight icon="gift">` |
+| `ShortcutTile` / `Illustration` | `title`, `illustration`(교체) / `name=calendar·card·gift·gauge` | `<WdsShortcutTile title illustration="calendar">` |
+| `TabBarItem` / `TabBar` | `state=default·selected`, `label`, `icon`(교체) | `<WdsTabBar v-model><WdsTabBarItem icon label>` |
 
 `state`는 Figma에서 화면을 그리기 위한 속성입니다. 코드에서는 `pressed`=`:active`, `focused`=`:focus-within`, `selected`=v-model 값 일치, `disabled`·`loading`·`error`=boolean prop으로 대응합니다.
 
