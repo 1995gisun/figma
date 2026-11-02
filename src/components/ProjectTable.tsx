@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import { color, radius } from '../theme/tokens';
+import { cssVar } from '../theme/tokens';
 import { Icon, type IconName } from './Icon';
 import { StatusChip, type ProjectStatus } from './StatusChip';
 
@@ -24,10 +24,10 @@ export function ProjectTableHeader() {
         display: 'grid',
         gridTemplateColumns: columns,
         alignItems: 'center',
-        height: 44,
-        px: 6,
+        height: cssVar('size.table-heading-height'),
+        px: cssVar('project-row.space.lg'),
         bgcolor: 'background.default',
-        borderBlock: `1px solid ${color.neutral200}`,
+        borderBlock: `1px solid ${cssVar('color.border.divider')}`,
       }}
     >
       {['Project', 'Owner', 'Status', 'Due date'].map((h) => (
@@ -39,7 +39,7 @@ export function ProjectTableHeader() {
   );
 }
 
-// DS/ProjectRow — 72 px · editable Name, Owner, Due date, status and Project icon slot
+// DS/ProjectRow — editable Name, Owner, Due date, status and Project icon slot; sizes from project-row/* tokens
 export function ProjectRow({ project }: { project: Project }) {
   return (
     <Box
@@ -48,19 +48,19 @@ export function ProjectRow({ project }: { project: Project }) {
         display: 'grid',
         gridTemplateColumns: columns,
         alignItems: 'center',
-        height: 72,
-        px: 6,
-        bgcolor: 'background.paper',
-        borderBottom: `1px solid ${color.neutral200}`,
+        height: cssVar('project-row.size.table-row-height'),
+        px: cssVar('project-row.space.lg'),
+        bgcolor: cssVar('project-row.color.surface.default'),
+        borderBottom: `1px solid ${cssVar('project-row.color.border.default')}`,
       }}
     >
-      <Box role="cell" sx={{ display: 'flex', alignItems: 'center', gap: 3 }}>
+      <Box role="cell" sx={{ display: 'flex', alignItems: 'center', gap: cssVar('project-row.space.sm') }}>
         <Box
           sx={{
-            width: 32,
-            height: 32,
-            borderRadius: `${radius.md}px`,
-            bgcolor: 'primary.light',
+            width: cssVar('size.avatar'),
+            height: cssVar('size.avatar'),
+            borderRadius: cssVar('project-row.shape.surface'),
+            bgcolor: cssVar('project-row.color.surface.brand-subtle'),
             display: 'grid',
             placeItems: 'center',
           }}

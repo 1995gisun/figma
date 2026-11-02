@@ -11,7 +11,7 @@ import { Initials } from '../components/Initials';
 import { MetricCard } from '../components/MetricCard';
 import { ProjectRow, ProjectTableHeader, type Project } from '../components/ProjectTable';
 import { SearchField } from '../components/SearchField';
-import { color, radius } from '../theme/tokens';
+import { cssVar, radius } from '../theme/tokens';
 
 const mainNav: { label: string; icon: IconName }[] = [
   { label: 'Overview', icon: 'layout-dashboard' },
@@ -66,7 +66,7 @@ function Sidebar() {
         width: 216,
         flexShrink: 0,
         bgcolor: 'background.paper',
-        borderRight: `1px solid ${color.neutral200}`,
+        borderRight: `1px solid ${cssVar('color.border.divider')}`,
         display: 'flex',
         flexDirection: 'column',
         position: 'sticky',
@@ -74,7 +74,7 @@ function Sidebar() {
         height: '100vh',
       }}
     >
-      <Box sx={{ height: 72, px: 6, display: 'flex', alignItems: 'center', borderBottom: `1px solid ${color.neutral200}` }}>
+      <Box sx={{ height: 72, px: 6, display: 'flex', alignItems: 'center', borderBottom: `1px solid ${cssVar('color.border.divider')}` }}>
         <Typography sx={{ fontSize: 20, fontWeight: 700 }}>Workspace</Typography>
       </Box>
       <Box sx={{ flex: 1, pt: 6, pb: 4, px: 3, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
@@ -91,7 +91,7 @@ function Sidebar() {
         </Box>
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
           <NavItem label="Settings" icon="settings" active={active === 'Settings'} onClick={() => setActive('Settings')} />
-          <Box sx={{ display: 'flex', alignItems: 'center', gap: 3, pt: 4, px: 3, borderTop: `1px solid ${color.neutral200}` }}>
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 3, pt: 4, px: 3, borderTop: `1px solid ${cssVar('color.border.divider')}` }}>
             <Initials text="JL" />
             <Box>
               <Typography variant="body1" fontWeight={500}>Jamie Lee</Typography>
@@ -112,7 +112,7 @@ function Topbar() {
         height: 72,
         px: 8,
         bgcolor: 'background.paper',
-        borderBottom: `1px solid ${color.neutral200}`,
+        borderBottom: `1px solid ${cssVar('color.border.divider')}`,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
@@ -154,7 +154,7 @@ function RecentProjects() {
           <ProjectRow key={p.id} project={p} />
         ))}
         {visible.length === 0 && (
-          <Typography variant="body1" color="text.secondary" sx={{ px: 6, py: 6, borderBottom: `1px solid ${color.neutral200}` }}>
+          <Typography variant="body1" color="text.secondary" sx={{ px: 6, py: 6, borderBottom: `1px solid ${cssVar('color.border.divider')}` }}>
             No projects match “{query}”.
           </Typography>
         )}

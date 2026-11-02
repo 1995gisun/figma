@@ -9,7 +9,7 @@ import { MetricCard } from '../components/MetricCard';
 import { ProjectRow, ProjectTableHeader } from '../components/ProjectTable';
 import { SearchField } from '../components/SearchField';
 import { StatusChip } from '../components/StatusChip';
-import { color, radius } from '../theme/tokens';
+import { color, cssVar, radius } from '../theme/tokens';
 
 const swatches: [string, string][][] = [
   [
@@ -105,7 +105,7 @@ export function ComponentLibrary() {
                 <Box key={i} sx={{ display: 'flex', gap: 3 }}>
                   {row.map(([name, hex]) => (
                     <Box key={name} sx={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', gap: 1 }}>
-                      <Box sx={{ height: 40, bgcolor: hex, border: `1px solid ${color.neutral200}`, borderRadius: `${radius.sm}px` }} />
+                      <Box sx={{ height: 40, bgcolor: hex, border: `1px solid ${cssVar('color.border.divider')}`, borderRadius: `${radius.sm}px` }} />
                       <Typography variant="body1" fontWeight={500}>{name}</Typography>
                       <Caption>{hex}</Caption>
                     </Box>
@@ -128,7 +128,7 @@ export function ComponentLibrary() {
                 <Box sx={{ display: 'flex', gap: 6, alignItems: 'flex-end' }}>
                   {spacing.map((s) => (
                     <Box key={s} sx={{ width: 52, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>
-                      <Box sx={{ width: s, height: 32, bgcolor: 'primary.light', border: `1px solid ${color.blue600}` }} />
+                      <Box sx={{ width: s, height: 32, bgcolor: 'primary.light', border: `1px solid ${cssVar('color.border.interactive')}` }} />
                       <Caption>{s}</Caption>
                     </Box>
                   ))}
@@ -186,7 +186,7 @@ export function ComponentLibrary() {
                 <SpecimenLabel>DS/ProjectRow</SpecimenLabel>
                 <Caption>848 × 72 px · Fixed columns</Caption>
               </Box>
-              <Box role="table" sx={{ width: 848, border: `1px solid ${color.neutral200}`, borderRadius: `${radius.md}px`, overflow: 'hidden' }}>
+              <Box role="table" sx={{ width: 848, border: `1px solid ${cssVar('color.border.divider')}`, borderRadius: `${radius.md}px`, overflow: 'hidden' }}>
                 <ProjectTableHeader />
                 <ProjectRow
                   project={{ id: 'demo', name: 'Website redesign', owner: 'Jamie Lee', status: 'In progress', dueDate: 'Nov 12', icon: 'panels-top-left' }}
@@ -199,7 +199,7 @@ export function ComponentLibrary() {
 
         {/* Local icon assets */}
         <Box sx={{ bgcolor: 'background.paper', borderRadius: `${radius.md}px`, px: 6, py: 4, display: 'flex', flexDirection: 'column', gap: 4 }}>
-          <Typography variant="body1" fontWeight={500} sx={{ color: '#020617' }}>
+          <Typography variant="body1" fontWeight={500} sx={{ color: cssVar('color.text.strong') }}>
             Icon assets · reusable slot content
           </Typography>
           <Box sx={{ display: 'flex', gap: 8, height: 32 }}>

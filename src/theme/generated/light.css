@@ -1,0 +1,335 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root, [data-theme="light"] {
+  --color-blue-50: #e3f2fd; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --color-blue-200: #bbdefb; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --color-blue-300: #90caf9; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --color-blue-600: #1976d2; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --color-blue-700: #1565c0; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --color-blue-950: #173452; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --color-neutral-0: #ffffff; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --color-neutral-50: #f5f7fa; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --color-neutral-100: #f1f5f9; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --color-neutral-200: #e2e8f0; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --color-neutral-300: #cbd5e1; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --color-neutral-500: #64748b; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --color-neutral-600: #475569; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --color-neutral-750: #253247; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --color-neutral-800: #1f2937; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --color-neutral-850: #1e293b; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --color-neutral-900: #0f172a; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --color-neutral-950: #020617; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --color-green-50: #e8f5e9; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --color-green-300: #81c784; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --color-green-800: #2e7d32; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --color-green-950: #183c2a; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --color-orange-50: #fff3e0; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --color-orange-300: #ffb74d; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --color-orange-800: #ed6c02; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --color-orange-900: #a64b00; /** Global high-contrast warning foreground #A64B00 */
+  --color-orange-950: #3d2b14; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --color-red-50: #ffebee; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --color-red-200: #ef9a9a; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --color-red-700: #c62828; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --color-red-950: #4a1d1d; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --font-family-default: Roboto; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --font-size-14: 14px; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --spacing-4: 4px; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --spacing-8: 8px; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --spacing-12: 12px; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --spacing-16: 16px; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --spacing-24: 24px; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --spacing-32: 32px; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --spacing-40: 40px; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --radius-4: 4px; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --radius-5: 5px; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --radius-8: 8px; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --radius-12: 12px; /** Global primitive: stable raw value. Identical across Light / Dark / Senior; semantic aliases select usage. */
+  --dimension-12: 12px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-14: 14px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-16: 16px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-18: 18px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-20: 20px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-21: 21px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-24: 24px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-27: 27px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-30: 30px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-32: 32px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-36: 36px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-40: 40px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-44: 44px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-48: 48px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-50: 50px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-52: 52px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-56: 56px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-63: 63px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-72: 72px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-96: 96px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-104: 104px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-132: 132px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-144: 144px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-160: 160px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-216: 216px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-240: 240px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --dimension-280: 280px; /** Global primitive: stable raw value; use through Semantic and Components. */
+  --color-background-canvas: var(--color-neutral-50); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-text-brand: var(--color-blue-600); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-text-secondary: var(--color-neutral-500); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-text-primary: var(--color-neutral-800); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-text-on-action: var(--color-neutral-0); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-text-placeholder: var(--color-neutral-500); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-text-strong: var(--color-neutral-950); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-text-brand-strong: var(--color-blue-700); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-text-error: var(--color-red-700); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-decoration-brand: var(--color-blue-600); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-surface-default: var(--color-neutral-0); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-surface-brand-subtle: var(--color-blue-50); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-surface-subtle: var(--color-neutral-50); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-border-default: var(--color-neutral-200); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-border-divider: var(--color-neutral-200); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-border-interactive: var(--color-blue-600); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-action-primary-background: var(--color-blue-600); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-action-secondary-background: var(--color-neutral-0); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-action-secondary-foreground: var(--color-blue-600); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-icon-on-action: var(--color-neutral-0); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-icon-brand: var(--color-blue-600); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-icon-secondary: var(--color-neutral-500); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-input-background: var(--color-neutral-0); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-status-info-background: var(--color-blue-50); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-status-info-foreground: var(--color-blue-600); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-status-warning-background: var(--color-orange-50); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-status-warning-foreground: var(--color-orange-800); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-status-success-background: var(--color-green-50); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-status-success-foreground: var(--color-green-800); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-status-error-background: var(--color-red-50); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-status-error-foreground: var(--color-red-700); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-navigation-background-active: var(--color-blue-50); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-navigation-icon-active: var(--color-blue-600); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-navigation-text-active: var(--color-blue-600); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --color-avatar-background: var(--color-blue-50); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --typography-font-family: var(--font-family-default); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --typography-caption-font-size: var(--dimension-12); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --typography-caption-line-height-18: var(--dimension-18); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --typography-body-font-size: var(--dimension-14); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --typography-body-line-height-21: var(--dimension-21); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --typography-body-line-height-20: var(--dimension-20); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --typography-subtitle-font-size: var(--dimension-16); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --typography-subtitle-line-height-24: var(--dimension-24); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --typography-heading-font-size: var(--dimension-20); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --typography-heading-line-height-30: var(--dimension-30); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --typography-display-font-size: var(--dimension-32); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --typography-display-line-height-40: var(--dimension-40); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --typography-hero-font-size: var(--dimension-40); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --typography-hero-line-height-50: var(--dimension-50); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --space-xxs: var(--spacing-4); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --space-xs: var(--spacing-8); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --space-sm: var(--spacing-12); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --space-md: var(--spacing-16); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --space-lg: var(--spacing-24); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --space-xl: var(--spacing-32); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --space-2xl: var(--spacing-40); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --space-control-inline: var(--dimension-16); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --space-input-inline: var(--dimension-12); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --space-card-inset: var(--dimension-24); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --space-card-stack: var(--dimension-12); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --shape-control: var(--radius-4); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --shape-subtle: var(--radius-5); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --shape-surface: var(--radius-8); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --shape-pill: var(--radius-12); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --shape-status-radius: var(--dimension-12); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --size-control-height: var(--dimension-40); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --size-input-width: var(--dimension-240); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --size-status-height: var(--dimension-24); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --size-status-width: var(--dimension-104); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --size-metric-height: var(--dimension-160); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --size-metric-heading-height: var(--dimension-24); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --size-table-row-height: var(--dimension-72); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --size-navigation-height: var(--dimension-44); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --size-table-toolbar-height: var(--dimension-104); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --size-table-heading-height: var(--dimension-44); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --size-table-footer-height: var(--dimension-56); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --size-pagination-control: var(--dimension-32); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --size-avatar: var(--dimension-32); /** Semantic role; aliases Global primitives. Light / Dark / Senior. */
+  --library-color-background-canvas: var(--color-background-canvas); /** Component role library → Semantic / color/background/canvas → Global. Match Semantic and Components mode on the target frame. */
+  --library-color-text-brand: var(--color-text-brand); /** Component role library → Semantic / color/text/brand → Global. Match Semantic and Components mode on the target frame. */
+  --library-color-text-secondary: var(--color-text-secondary); /** Component role library → Semantic / color/text/secondary → Global. Match Semantic and Components mode on the target frame. */
+  --library-color-text-primary: var(--color-text-primary); /** Component role library → Semantic / color/text/primary → Global. Match Semantic and Components mode on the target frame. */
+  --library-color-text-strong: var(--color-text-strong); /** Component role library → Semantic / color/text/strong → Global. Match Semantic and Components mode on the target frame. */
+  --library-color-decoration-brand: var(--color-decoration-brand); /** Component role library → Semantic / color/decoration/brand → Global. Match Semantic and Components mode on the target frame. */
+  --library-color-surface-default: var(--color-surface-default); /** Component role library → Semantic / color/surface/default → Global. Match Semantic and Components mode on the target frame. */
+  --library-color-surface-brand-subtle: var(--color-surface-brand-subtle); /** Component role library → Semantic / color/surface/brand-subtle → Global. Match Semantic and Components mode on the target frame. */
+  --library-color-surface-subtle: var(--color-surface-subtle); /** Component role library → Semantic / color/surface/subtle → Global. Match Semantic and Components mode on the target frame. */
+  --library-color-border-default: var(--color-border-default); /** Component role library → Semantic / color/border/default → Global. Match Semantic and Components mode on the target frame. */
+  --library-color-border-divider: var(--color-border-divider); /** Component role library → Semantic / color/border/divider → Global. Match Semantic and Components mode on the target frame. */
+  --library-color-border-interactive: var(--color-border-interactive); /** Component role library → Semantic / color/border/interactive → Global. Match Semantic and Components mode on the target frame. */
+  --library-typography-font-family: var(--typography-font-family); /** Component role library → Semantic / typography/font-family → Global. Match Semantic and Components mode on the target frame. */
+  --library-typography-caption-font-size: var(--typography-caption-font-size); /** Component role library → Semantic / typography/caption/font-size → Global. Match Semantic and Components mode on the target frame. */
+  --library-typography-caption-line-height-18: var(--typography-caption-line-height-18); /** Component role library → Semantic / typography/caption/line-height-18 → Global. Match Semantic and Components mode on the target frame. */
+  --library-typography-hero-font-size: var(--typography-hero-font-size); /** Component role library → Semantic / typography/hero/font-size → Global. Match Semantic and Components mode on the target frame. */
+  --library-typography-hero-line-height-50: var(--typography-hero-line-height-50); /** Component role library → Semantic / typography/hero/line-height-50 → Global. Match Semantic and Components mode on the target frame. */
+  --library-typography-subtitle-font-size: var(--typography-subtitle-font-size); /** Component role library → Semantic / typography/subtitle/font-size → Global. Match Semantic and Components mode on the target frame. */
+  --library-typography-subtitle-line-height-24: var(--typography-subtitle-line-height-24); /** Component role library → Semantic / typography/subtitle/line-height-24 → Global. Match Semantic and Components mode on the target frame. */
+  --library-typography-heading-font-size: var(--typography-heading-font-size); /** Component role library → Semantic / typography/heading/font-size → Global. Match Semantic and Components mode on the target frame. */
+  --library-typography-heading-line-height-30: var(--typography-heading-line-height-30); /** Component role library → Semantic / typography/heading/line-height-30 → Global. Match Semantic and Components mode on the target frame. */
+  --library-typography-body-font-size: var(--typography-body-font-size); /** Component role library → Semantic / typography/body/font-size → Global. Match Semantic and Components mode on the target frame. */
+  --library-typography-body-line-height-21: var(--typography-body-line-height-21); /** Component role library → Semantic / typography/body/line-height-21 → Global. Match Semantic and Components mode on the target frame. */
+  --library-typography-body-line-height-20: var(--typography-body-line-height-20); /** Component role library → Semantic / typography/body/line-height-20 → Global. Match Semantic and Components mode on the target frame. */
+  --library-typography-display-font-size: var(--typography-display-font-size); /** Component role library → Semantic / typography/display/font-size → Global. Match Semantic and Components mode on the target frame. */
+  --library-typography-display-line-height-40: var(--typography-display-line-height-40); /** Component role library → Semantic / typography/display/line-height-40 → Global. Match Semantic and Components mode on the target frame. */
+  --library-space-xl: var(--space-xl); /** Component role library → Semantic / space/xl → Global. Match Semantic and Components mode on the target frame. */
+  --library-space-2xl: var(--space-2xl); /** Component role library → Semantic / space/2xl → Global. Match Semantic and Components mode on the target frame. */
+  --library-space-sm: var(--space-sm); /** Component role library → Semantic / space/sm → Global. Match Semantic and Components mode on the target frame. */
+  --library-space-lg: var(--space-lg); /** Component role library → Semantic / space/lg → Global. Match Semantic and Components mode on the target frame. */
+  --library-space-xxs: var(--space-xxs); /** Component role library → Semantic / space/xxs → Global. Match Semantic and Components mode on the target frame. */
+  --library-space-xs: var(--space-xs); /** Component role library → Semantic / space/xs → Global. Match Semantic and Components mode on the target frame. */
+  --library-space-md: var(--space-md); /** Component role library → Semantic / space/md → Global. Match Semantic and Components mode on the target frame. */
+  --library-shape-control: var(--shape-control); /** Component role library → Semantic / shape/control → Global. Match Semantic and Components mode on the target frame. */
+  --library-shape-pill: var(--shape-pill); /** Component role library → Semantic / shape/pill → Global. Match Semantic and Components mode on the target frame. */
+  --library-shape-subtle: var(--shape-subtle); /** Component role library → Semantic / shape/subtle → Global. Match Semantic and Components mode on the target frame. */
+  --library-shape-surface: var(--shape-surface); /** Component role library → Semantic / shape/surface → Global. Match Semantic and Components mode on the target frame. */
+  --library-size-table-heading-height: var(--size-table-heading-height); /** Component role library → Semantic / size/table-heading-height → Global. Match Semantic and Components mode on the target frame. */
+  --button-primary-color-action-primary-background: var(--color-action-primary-background); /** Component role button/primary → Semantic / color/action/primary-background → Global. Match Semantic and Components mode on the target frame. */
+  --button-primary-color-border-interactive: var(--color-border-interactive); /** Component role button/primary → Semantic / color/border/interactive → Global. Match Semantic and Components mode on the target frame. */
+  --button-primary-color-icon-on-action: var(--color-icon-on-action); /** Component role button/primary → Semantic / color/icon/on-action → Global. Match Semantic and Components mode on the target frame. */
+  --button-primary-color-text-on-action: var(--color-text-on-action); /** Component role button/primary → Semantic / color/text/on-action → Global. Match Semantic and Components mode on the target frame. */
+  --button-primary-typography-font-family: var(--typography-font-family); /** Component role button/primary → Semantic / typography/font-family → Global. Match Semantic and Components mode on the target frame. */
+  --button-primary-typography-body-font-size: var(--typography-body-font-size); /** Component role button/primary → Semantic / typography/body/font-size → Global. Match Semantic and Components mode on the target frame. */
+  --button-primary-typography-body-line-height-21: var(--typography-body-line-height-21); /** Component role button/primary → Semantic / typography/body/line-height-21 → Global. Match Semantic and Components mode on the target frame. */
+  --button-primary-space-xs: var(--space-xs); /** Component role button/primary → Semantic / space/xs → Global. Match Semantic and Components mode on the target frame. */
+  --button-primary-space-md: var(--space-md); /** Component role button/primary → Semantic / space/md → Global. Match Semantic and Components mode on the target frame. */
+  --button-primary-space-control-inline: var(--space-control-inline); /** Component role button/primary → Semantic / space/control-inline → Global. Match Semantic and Components mode on the target frame. */
+  --button-primary-shape-control: var(--shape-control); /** Component role button/primary → Semantic / shape/control → Global. Match Semantic and Components mode on the target frame. */
+  --button-primary-size-control-height: var(--size-control-height); /** Component role button/primary → Semantic / size/control-height → Global. Match Semantic and Components mode on the target frame. */
+  --button-outlined-color-action-secondary-background: var(--color-action-secondary-background); /** Component role button/outlined → Semantic / color/action/secondary-background → Global. Match Semantic and Components mode on the target frame. */
+  --button-outlined-color-action-secondary-foreground: var(--color-action-secondary-foreground); /** Component role button/outlined → Semantic / color/action/secondary-foreground → Global. Match Semantic and Components mode on the target frame. */
+  --button-outlined-color-border-interactive: var(--color-border-interactive); /** Component role button/outlined → Semantic / color/border/interactive → Global. Match Semantic and Components mode on the target frame. */
+  --button-outlined-color-icon-brand: var(--color-icon-brand); /** Component role button/outlined → Semantic / color/icon/brand → Global. Match Semantic and Components mode on the target frame. */
+  --button-outlined-typography-font-family: var(--typography-font-family); /** Component role button/outlined → Semantic / typography/font-family → Global. Match Semantic and Components mode on the target frame. */
+  --button-outlined-typography-body-font-size: var(--typography-body-font-size); /** Component role button/outlined → Semantic / typography/body/font-size → Global. Match Semantic and Components mode on the target frame. */
+  --button-outlined-typography-body-line-height-21: var(--typography-body-line-height-21); /** Component role button/outlined → Semantic / typography/body/line-height-21 → Global. Match Semantic and Components mode on the target frame. */
+  --button-outlined-space-xs: var(--space-xs); /** Component role button/outlined → Semantic / space/xs → Global. Match Semantic and Components mode on the target frame. */
+  --button-outlined-space-md: var(--space-md); /** Component role button/outlined → Semantic / space/md → Global. Match Semantic and Components mode on the target frame. */
+  --button-outlined-space-control-inline: var(--space-control-inline); /** Component role button/outlined → Semantic / space/control-inline → Global. Match Semantic and Components mode on the target frame. */
+  --button-outlined-shape-control: var(--shape-control); /** Component role button/outlined → Semantic / shape/control → Global. Match Semantic and Components mode on the target frame. */
+  --button-outlined-size-control-height: var(--size-control-height); /** Component role button/outlined → Semantic / size/control-height → Global. Match Semantic and Components mode on the target frame. */
+  --input-default-color-input-background: var(--color-input-background); /** Component role input/default → Semantic / color/input/background → Global. Match Semantic and Components mode on the target frame. */
+  --input-default-color-border-default: var(--color-border-default); /** Component role input/default → Semantic / color/border/default → Global. Match Semantic and Components mode on the target frame. */
+  --input-default-color-icon-secondary: var(--color-icon-secondary); /** Component role input/default → Semantic / color/icon/secondary → Global. Match Semantic and Components mode on the target frame. */
+  --input-default-color-text-placeholder: var(--color-text-placeholder); /** Component role input/default → Semantic / color/text/placeholder → Global. Match Semantic and Components mode on the target frame. */
+  --input-default-typography-font-family: var(--typography-font-family); /** Component role input/default → Semantic / typography/font-family → Global. Match Semantic and Components mode on the target frame. */
+  --input-default-typography-body-font-size: var(--typography-body-font-size); /** Component role input/default → Semantic / typography/body/font-size → Global. Match Semantic and Components mode on the target frame. */
+  --input-default-typography-body-line-height-21: var(--typography-body-line-height-21); /** Component role input/default → Semantic / typography/body/line-height-21 → Global. Match Semantic and Components mode on the target frame. */
+  --input-default-space-xs: var(--space-xs); /** Component role input/default → Semantic / space/xs → Global. Match Semantic and Components mode on the target frame. */
+  --input-default-space-sm: var(--space-sm); /** Component role input/default → Semantic / space/sm → Global. Match Semantic and Components mode on the target frame. */
+  --input-default-space-input-inline: var(--space-input-inline); /** Component role input/default → Semantic / space/input-inline → Global. Match Semantic and Components mode on the target frame. */
+  --input-default-shape-control: var(--shape-control); /** Component role input/default → Semantic / shape/control → Global. Match Semantic and Components mode on the target frame. */
+  --input-default-size-control-height: var(--size-control-height); /** Component role input/default → Semantic / size/control-height → Global. Match Semantic and Components mode on the target frame. */
+  --input-default-size-input-width: var(--size-input-width); /** Component role input/default → Semantic / size/input-width → Global. Match Semantic and Components mode on the target frame. */
+  --input-error-color-text-error: var(--color-text-error); /** Component role input/error → Semantic / color/text/error → Global. Match Semantic and Components mode on the target frame. */
+  --input-error-color-status-error-foreground: var(--color-status-error-foreground); /** Component role input/error → Semantic / color/status/error/foreground → Global. Match Semantic and Components mode on the target frame. */
+  --chip-info-color-status-info-background: var(--color-status-info-background); /** Component role chip/info → Semantic / color/status/info/background → Global. Match Semantic and Components mode on the target frame. */
+  --chip-info-color-status-info-foreground: var(--color-status-info-foreground); /** Component role chip/info → Semantic / color/status/info/foreground → Global. Match Semantic and Components mode on the target frame. */
+  --chip-info-typography-font-family: var(--typography-font-family); /** Component role chip/info → Semantic / typography/font-family → Global. Match Semantic and Components mode on the target frame. */
+  --chip-info-typography-caption-font-size: var(--typography-caption-font-size); /** Component role chip/info → Semantic / typography/caption/font-size → Global. Match Semantic and Components mode on the target frame. */
+  --chip-info-typography-caption-line-height-18: var(--typography-caption-line-height-18); /** Component role chip/info → Semantic / typography/caption/line-height-18 → Global. Match Semantic and Components mode on the target frame. */
+  --chip-info-space-sm: var(--space-sm); /** Component role chip/info → Semantic / space/sm → Global. Match Semantic and Components mode on the target frame. */
+  --chip-info-shape-pill: var(--shape-pill); /** Component role chip/info → Semantic / shape/pill → Global. Match Semantic and Components mode on the target frame. */
+  --chip-info-shape-status-radius: var(--shape-status-radius); /** Component role chip/info → Semantic / shape/status-radius → Global. Match Semantic and Components mode on the target frame. */
+  --chip-info-size-status-height: var(--size-status-height); /** Component role chip/info → Semantic / size/status-height → Global. Match Semantic and Components mode on the target frame. */
+  --chip-info-size-status-width: var(--size-status-width); /** Component role chip/info → Semantic / size/status-width → Global. Match Semantic and Components mode on the target frame. */
+  --chip-warning-color-status-warning-background: var(--color-status-warning-background); /** Component role chip/warning → Semantic / color/status/warning/background → Global. Match Semantic and Components mode on the target frame. */
+  --chip-warning-color-status-warning-foreground: var(--color-status-warning-foreground); /** Component role chip/warning → Semantic / color/status/warning/foreground → Global. Match Semantic and Components mode on the target frame. */
+  --chip-warning-typography-font-family: var(--typography-font-family); /** Component role chip/warning → Semantic / typography/font-family → Global. Match Semantic and Components mode on the target frame. */
+  --chip-warning-typography-caption-font-size: var(--typography-caption-font-size); /** Component role chip/warning → Semantic / typography/caption/font-size → Global. Match Semantic and Components mode on the target frame. */
+  --chip-warning-typography-caption-line-height-18: var(--typography-caption-line-height-18); /** Component role chip/warning → Semantic / typography/caption/line-height-18 → Global. Match Semantic and Components mode on the target frame. */
+  --chip-warning-space-sm: var(--space-sm); /** Component role chip/warning → Semantic / space/sm → Global. Match Semantic and Components mode on the target frame. */
+  --chip-warning-shape-pill: var(--shape-pill); /** Component role chip/warning → Semantic / shape/pill → Global. Match Semantic and Components mode on the target frame. */
+  --chip-warning-shape-status-radius: var(--shape-status-radius); /** Component role chip/warning → Semantic / shape/status-radius → Global. Match Semantic and Components mode on the target frame. */
+  --chip-warning-size-status-height: var(--size-status-height); /** Component role chip/warning → Semantic / size/status-height → Global. Match Semantic and Components mode on the target frame. */
+  --chip-warning-size-status-width: var(--size-status-width); /** Component role chip/warning → Semantic / size/status-width → Global. Match Semantic and Components mode on the target frame. */
+  --chip-success-color-status-success-background: var(--color-status-success-background); /** Component role chip/success → Semantic / color/status/success/background → Global. Match Semantic and Components mode on the target frame. */
+  --chip-success-color-status-success-foreground: var(--color-status-success-foreground); /** Component role chip/success → Semantic / color/status/success/foreground → Global. Match Semantic and Components mode on the target frame. */
+  --chip-success-typography-font-family: var(--typography-font-family); /** Component role chip/success → Semantic / typography/font-family → Global. Match Semantic and Components mode on the target frame. */
+  --chip-success-typography-caption-font-size: var(--typography-caption-font-size); /** Component role chip/success → Semantic / typography/caption/font-size → Global. Match Semantic and Components mode on the target frame. */
+  --chip-success-typography-caption-line-height-18: var(--typography-caption-line-height-18); /** Component role chip/success → Semantic / typography/caption/line-height-18 → Global. Match Semantic and Components mode on the target frame. */
+  --chip-success-space-sm: var(--space-sm); /** Component role chip/success → Semantic / space/sm → Global. Match Semantic and Components mode on the target frame. */
+  --chip-success-shape-pill: var(--shape-pill); /** Component role chip/success → Semantic / shape/pill → Global. Match Semantic and Components mode on the target frame. */
+  --chip-success-shape-status-radius: var(--shape-status-radius); /** Component role chip/success → Semantic / shape/status-radius → Global. Match Semantic and Components mode on the target frame. */
+  --chip-success-size-status-height: var(--size-status-height); /** Component role chip/success → Semantic / size/status-height → Global. Match Semantic and Components mode on the target frame. */
+  --chip-success-size-status-width: var(--size-status-width); /** Component role chip/success → Semantic / size/status-width → Global. Match Semantic and Components mode on the target frame. */
+  --metric-card-color-surface-default: var(--color-surface-default); /** Component role metric-card → Semantic / color/surface/default → Global. Match Semantic and Components mode on the target frame. */
+  --metric-card-color-border-default: var(--color-border-default); /** Component role metric-card → Semantic / color/border/default → Global. Match Semantic and Components mode on the target frame. */
+  --metric-card-color-text-secondary: var(--color-text-secondary); /** Component role metric-card → Semantic / color/text/secondary → Global. Match Semantic and Components mode on the target frame. */
+  --metric-card-color-text-primary: var(--color-text-primary); /** Component role metric-card → Semantic / color/text/primary → Global. Match Semantic and Components mode on the target frame. */
+  --metric-card-color-status-success-foreground: var(--color-status-success-foreground); /** Component role metric-card → Semantic / color/status/success/foreground → Global. Match Semantic and Components mode on the target frame. */
+  --metric-card-typography-font-family: var(--typography-font-family); /** Component role metric-card → Semantic / typography/font-family → Global. Match Semantic and Components mode on the target frame. */
+  --metric-card-typography-body-font-size: var(--typography-body-font-size); /** Component role metric-card → Semantic / typography/body/font-size → Global. Match Semantic and Components mode on the target frame. */
+  --metric-card-typography-body-line-height-21: var(--typography-body-line-height-21); /** Component role metric-card → Semantic / typography/body/line-height-21 → Global. Match Semantic and Components mode on the target frame. */
+  --metric-card-typography-body-line-height-20: var(--typography-body-line-height-20); /** Component role metric-card → Semantic / typography/body/line-height-20 → Global. Match Semantic and Components mode on the target frame. */
+  --metric-card-typography-display-font-size: var(--typography-display-font-size); /** Component role metric-card → Semantic / typography/display/font-size → Global. Match Semantic and Components mode on the target frame. */
+  --metric-card-typography-display-line-height-40: var(--typography-display-line-height-40); /** Component role metric-card → Semantic / typography/display/line-height-40 → Global. Match Semantic and Components mode on the target frame. */
+  --metric-card-space-sm: var(--space-sm); /** Component role metric-card → Semantic / space/sm → Global. Match Semantic and Components mode on the target frame. */
+  --metric-card-space-lg: var(--space-lg); /** Component role metric-card → Semantic / space/lg → Global. Match Semantic and Components mode on the target frame. */
+  --metric-card-space-card-inset: var(--space-card-inset); /** Component role metric-card → Semantic / space/card-inset → Global. Match Semantic and Components mode on the target frame. */
+  --metric-card-space-card-stack: var(--space-card-stack); /** Component role metric-card → Semantic / space/card-stack → Global. Match Semantic and Components mode on the target frame. */
+  --metric-card-shape-surface: var(--shape-surface); /** Component role metric-card → Semantic / shape/surface → Global. Match Semantic and Components mode on the target frame. */
+  --metric-card-size-metric-height: var(--size-metric-height); /** Component role metric-card → Semantic / size/metric-height → Global. Match Semantic and Components mode on the target frame. */
+  --metric-card-size-metric-heading-height: var(--size-metric-heading-height); /** Component role metric-card → Semantic / size/metric-heading-height → Global. Match Semantic and Components mode on the target frame. */
+  --project-row-color-surface-default: var(--color-surface-default); /** Component role project-row → Semantic / color/surface/default → Global. Match Semantic and Components mode on the target frame. */
+  --project-row-color-surface-brand-subtle: var(--color-surface-brand-subtle); /** Component role project-row → Semantic / color/surface/brand-subtle → Global. Match Semantic and Components mode on the target frame. */
+  --project-row-color-border-default: var(--color-border-default); /** Component role project-row → Semantic / color/border/default → Global. Match Semantic and Components mode on the target frame. */
+  --project-row-color-text-primary: var(--color-text-primary); /** Component role project-row → Semantic / color/text/primary → Global. Match Semantic and Components mode on the target frame. */
+  --project-row-color-text-secondary: var(--color-text-secondary); /** Component role project-row → Semantic / color/text/secondary → Global. Match Semantic and Components mode on the target frame. */
+  --project-row-typography-font-family: var(--typography-font-family); /** Component role project-row → Semantic / typography/font-family → Global. Match Semantic and Components mode on the target frame. */
+  --project-row-typography-body-font-size: var(--typography-body-font-size); /** Component role project-row → Semantic / typography/body/font-size → Global. Match Semantic and Components mode on the target frame. */
+  --project-row-typography-body-line-height-21: var(--typography-body-line-height-21); /** Component role project-row → Semantic / typography/body/line-height-21 → Global. Match Semantic and Components mode on the target frame. */
+  --project-row-space-lg: var(--space-lg); /** Component role project-row → Semantic / space/lg → Global. Match Semantic and Components mode on the target frame. */
+  --project-row-space-sm: var(--space-sm); /** Component role project-row → Semantic / space/sm → Global. Match Semantic and Components mode on the target frame. */
+  --project-row-shape-surface: var(--shape-surface); /** Component role project-row → Semantic / shape/surface → Global. Match Semantic and Components mode on the target frame. */
+  --project-row-size-table-row-height: var(--size-table-row-height); /** Component role project-row → Semantic / size/table-row-height → Global. Match Semantic and Components mode on the target frame. */
+  --icon-default-color-icon-brand: var(--color-icon-brand); /** Component role icon/default → Semantic / color/icon/brand → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-color-background-canvas: var(--color-background-canvas); /** Component role workspace → Semantic / color/background/canvas → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-color-surface-default: var(--color-surface-default); /** Component role workspace → Semantic / color/surface/default → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-color-surface-subtle: var(--color-surface-subtle); /** Component role workspace → Semantic / color/surface/subtle → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-color-surface-brand-subtle: var(--color-surface-brand-subtle); /** Component role workspace → Semantic / color/surface/brand-subtle → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-color-border-default: var(--color-border-default); /** Component role workspace → Semantic / color/border/default → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-color-border-divider: var(--color-border-divider); /** Component role workspace → Semantic / color/border/divider → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-color-text-primary: var(--color-text-primary); /** Component role workspace → Semantic / color/text/primary → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-color-text-secondary: var(--color-text-secondary); /** Component role workspace → Semantic / color/text/secondary → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-color-text-brand: var(--color-text-brand); /** Component role workspace → Semantic / color/text/brand → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-color-text-brand-strong: var(--color-text-brand-strong); /** Component role workspace → Semantic / color/text/brand-strong → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-color-navigation-background-active: var(--color-navigation-background-active); /** Component role workspace → Semantic / color/navigation/background-active → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-color-navigation-icon-active: var(--color-navigation-icon-active); /** Component role workspace → Semantic / color/navigation/icon-active → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-color-navigation-text-active: var(--color-navigation-text-active); /** Component role workspace → Semantic / color/navigation/text-active → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-color-icon-secondary: var(--color-icon-secondary); /** Component role workspace → Semantic / color/icon/secondary → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-color-icon-brand: var(--color-icon-brand); /** Component role workspace → Semantic / color/icon/brand → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-color-avatar-background: var(--color-avatar-background); /** Component role workspace → Semantic / color/avatar/background → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-typography-font-family: var(--typography-font-family); /** Component role workspace → Semantic / typography/font-family → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-typography-heading-font-size: var(--typography-heading-font-size); /** Component role workspace → Semantic / typography/heading/font-size → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-typography-heading-line-height-30: var(--typography-heading-line-height-30); /** Component role workspace → Semantic / typography/heading/line-height-30 → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-typography-body-font-size: var(--typography-body-font-size); /** Component role workspace → Semantic / typography/body/font-size → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-typography-body-line-height-21: var(--typography-body-line-height-21); /** Component role workspace → Semantic / typography/body/line-height-21 → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-typography-caption-font-size: var(--typography-caption-font-size); /** Component role workspace → Semantic / typography/caption/font-size → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-typography-caption-line-height-18: var(--typography-caption-line-height-18); /** Component role workspace → Semantic / typography/caption/line-height-18 → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-typography-display-font-size: var(--typography-display-font-size); /** Component role workspace → Semantic / typography/display/font-size → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-typography-display-line-height-40: var(--typography-display-line-height-40); /** Component role workspace → Semantic / typography/display/line-height-40 → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-typography-subtitle-font-size: var(--typography-subtitle-font-size); /** Component role workspace → Semantic / typography/subtitle/font-size → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-typography-subtitle-line-height-24: var(--typography-subtitle-line-height-24); /** Component role workspace → Semantic / typography/subtitle/line-height-24 → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-space-lg: var(--space-lg); /** Component role workspace → Semantic / space/lg → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-space-sm: var(--space-sm); /** Component role workspace → Semantic / space/sm → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-space-md: var(--space-md); /** Component role workspace → Semantic / space/md → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-space-xxs: var(--space-xxs); /** Component role workspace → Semantic / space/xxs → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-space-xl: var(--space-xl); /** Component role workspace → Semantic / space/xl → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-space-xs: var(--space-xs); /** Component role workspace → Semantic / space/xs → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-shape-control: var(--shape-control); /** Component role workspace → Semantic / shape/control → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-shape-pill: var(--shape-pill); /** Component role workspace → Semantic / shape/pill → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-shape-surface: var(--shape-surface); /** Component role workspace → Semantic / shape/surface → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-size-navigation-height: var(--size-navigation-height); /** Component role workspace → Semantic / size/navigation-height → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-size-table-toolbar-height: var(--size-table-toolbar-height); /** Component role workspace → Semantic / size/table-toolbar-height → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-size-table-heading-height: var(--size-table-heading-height); /** Component role workspace → Semantic / size/table-heading-height → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-size-table-footer-height: var(--size-table-footer-height); /** Component role workspace → Semantic / size/table-footer-height → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-size-pagination-control: var(--size-pagination-control); /** Component role workspace → Semantic / size/pagination-control → Global. Match Semantic and Components mode on the target frame. */
+  --workspace-size-avatar: var(--size-avatar); /** Component role workspace → Semantic / size/avatar → Global. Match Semantic and Components mode on the target frame. */
+}
