@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { storybookTest } from '@storybook/addon-vitest/vitest-plugin';
 import { playwright } from '@vitest/browser-playwright';
 import { buildTokens, TOKENS_FILE } from './scripts/build-tokens.mjs';
+import { buildWdsTokens, WDS_TOKENS_FILE } from './design-system/build-tokens.mjs';
 const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(fileURLToPath(import.meta.url));
 
 // tokens/tokens.json → src/theme/generated/* (Style Dictionary).
@@ -41,9 +42,41 @@ function designTokens(): Plugin {
   };
 }
 
+// design-system/tokens.json (Figma "AI system test" → Tokens Studio single-file sync) → src/theme/generated/wds/*.css.
+// Same pattern as designTokens(): build on start, rebuild when the JSON is saved
+// (e.g. after `npm run storybook:sync` pulls a Tokens Studio push), then Vite HMR updates the CSS.
+function wdsTokens(): Plugin {
+  return {
+    name: 'wds-design-tokens',
+    async buildStart() {
+      await buildWdsTokens({ log: () => {} });
+    },
+    configureServer(server) {
+      const logger = server.config.logger;
+      let timer: ReturnType<typeof setTimeout> | undefined;
+      server.watcher.add(WDS_TOKENS_FILE);
+      const onChange = (file: string) => {
+        if (path.resolve(file) !== WDS_TOKENS_FILE) return;
+        clearTimeout(timer);
+        timer = setTimeout(async () => {
+          try {
+            await buildWdsTokens({ log: (msg: string) => logger.info(msg, { timestamp: true }) });
+          } catch (err) {
+            const message = `design-system/tokens.json 빌드 실패 — 이전 결과를 유지합니다\n${(err as Error).message}`;
+            logger.error(message, { timestamp: true });
+            if (server.ws.clients.size) server.ws.send({ type: 'error', err: { message, stack: '' } });
+          }
+        }, 100);
+      };
+      server.watcher.on('change', onChange);
+      server.watcher.on('add', onChange);
+    },
+  };
+}
+
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
-  plugins: [react(), designTokens()],
+  plugins: [react(), designTokens(), wdsTokens()],
   test: {
     projects: [{
       extends: true,

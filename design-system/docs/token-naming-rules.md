@@ -1,14 +1,14 @@
 # 디자인 토큰 이름 규칙
 
-Figma Variables, `tokens/*.json`, CSS 변수가 **같은 이름**을 쓰도록 하는 규칙입니다. 이름이 같아야 Figma에서 바꾼 값이 사람 손 없이 코드까지 이어집니다.
+Figma Variables, `design-system/tokens.json`, CSS 변수가 **같은 이름**을 쓰도록 하는 규칙입니다. 이름이 같아야 Figma에서 바꾼 값이 사람 손 없이 코드까지 이어집니다.
 
 ## 1. 3단 구조
 
-| 층 | Figma 컬렉션 | 파일 | 모드 | 누가 쓰나 | 예 |
+| 층 | Figma 컬렉션 | tokens.json 세트 | 모드 | 누가 쓰나 | 예 |
 |---|---|---|---|---|---|
-| 기초(Global) | `Global` | `tokens/global.json` | 1개(Value) | **아무도 직접 쓰지 않음** — Semantic이 참조만 함 | `color/blue/50`, `spacing/16`, `font-size/16` |
-| 의미(Semantic) | `Semantic` | `tokens/semantic/{light,dark,senior}.json` | Light · Dark · Senior | 화면(페이지) 조립 | `color/primary/normal`, `spacing/gap-md`, `font-size/body-1` |
-| 컴포넌트(Component) | `Component` | `tokens/component.json` | 1개(Value) | 컴포넌트 5종 내부 | `button/primary/bg`, `input/border-error` |
+| 기초(Global) | `Global` | `Global/Value` | 1개(Value) | **아무도 직접 쓰지 않음** — Semantic이 참조만 함 | `color/blue/50`, `spacing/16`, `font-size/16` |
+| 의미(Semantic) | `Semantic` | `Semantic/Light`·`Dark`·`Senior` | Light · Dark · Senior | 화면(페이지) 조립 | `color/primary/normal`, `spacing/gap-md`, `font-size/body-1` |
+| 컴포넌트(Component) | `Component` | `Component/Value` | 1개(Value) | 컴포넌트 5종 내부 | `button/primary/bg`, `input/border-error` |
 
 - 참조 방향은 **Component → Semantic → Global** 한 방향만 허용합니다. 거꾸로 참조하거나 층을 건너뛰지 않습니다.
 - 값(HEX, px)은 **Global에만** 있습니다. Semantic과 Component는 전부 별칭(alias)입니다.
@@ -24,7 +24,7 @@ Figma Variables, `tokens/*.json`, CSS 변수가 **같은 이름**을 쓰도록 �
 |---|---|---|
 | Figma 변수 | 슬래시 | `color/label/alternative` |
 | JSON 참조 | 점 | `{color.label.alternative}` |
-| CSS 변수 (Figma Dev Mode code syntax와 동일) | 하이픈 | `var(--color-label-alternative)` |
+| CSS 변수 (Figma Dev Mode code syntax와 동일) | `wds-` 접두사 + 하이픈 | `var(--wds-color-label-alternative)` |
 | iOS code syntax(참고용) | camelCase | `Color.wds.labelAlternative` |
 
 ### 분류(첫 단어)
@@ -60,9 +60,13 @@ Figma Variables, `tokens/*.json`, CSS 변수가 **같은 이름**을 쓰도록 �
 
 코드에서는 `<html data-theme="light|dark|senior">`로 전환합니다(`build-tokens.mjs`가 테마별 CSS를 만듭니다).
 
+`--wds-` 접두사는 같은 저장소의 다른 토큰 빌드(`tokens/tokens.json`)와 변수 이름이 섞이지 않게 하기 위한 것입니다.
+
+Tokens Studio 무료 버전에는 테마 기능이 없으므로, 세트 이름을 Figma `컬렉션/모드`와 똑같이 두고 빌드 스크립트가 모드별로 세트를 합칩니다. 세트 이름을 바꾸면 Figma에서 다시 가져올 때 세트가 새로 생기므로 바꾸지 않습니다.
+
 ## 4. 컴포넌트 변형 이름 = 코드 속성 이름
 
-Figma 컴포넌트 속성 이름과 값은 Vue 컴포넌트 prop과 같게 맞춥니다.
+Figma 컴포넌트 속성 이름과 값은 코드 컴포넌트 prop과 같게 맞춥니다(아래 예는 Vue 기준, React도 같은 이름을 씁니다).
 
 | Figma 컴포넌트 | Figma 속성 | Vue 사용 예 |
 |---|---|---|
@@ -85,4 +89,4 @@ Figma 컴포넌트 속성 이름과 값은 Vue 컴포넌트 prop과 같게 맞�
 
 1. 필요한 값이 Global에 있는지 확인하고, 없으면 Global에 값을 추가한다.
 2. Semantic(3개 모드 모두) 또는 Component에 별칭을 추가한다. scope(쓸 수 있는 속성)와 code syntax(`var(--이름)`)를 반드시 지정한다.
-3. JSON을 내보내 PR을 올리고, 검증자 승인 후 병합한다.
+3. Tokens Studio에서 Import variables(스타일 제외) 후 Push 한다. `sua/design-system` 브랜치에 커밋되고, 검증자 승인 후 병합한다.

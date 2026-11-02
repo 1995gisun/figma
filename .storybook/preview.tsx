@@ -5,6 +5,10 @@ import '@fontsource/roboto/700.css';
 import '../src/theme/generated/light.css';
 import '../src/theme/generated/dark.css';
 import '../src/theme/generated/senior.css';
+// WDS tokens (design-system/tokens, --wds-* prefix) — same data-theme selectors, so the Mode toolbar switches both.
+import '../src/theme/generated/wds/light.css';
+import '../src/theme/generated/wds/dark.css';
+import '../src/theme/generated/wds/senior.css';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
 import type { Preview } from '@storybook/react-vite'
